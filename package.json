@@ -1,0 +1,19 @@
+{
+  "name": "n-util",
+  "version": "0.0.1",
+  "description": "a util tool for dev",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReAlign/n-util.git"
+  },
+  "author": "ReAlign",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReAlign/n-util/issues"
+  },
+  "homepage": "https://github.com/ReAlign/n-util#readme"
+}
