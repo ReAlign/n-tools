@@ -1,19 +1,19 @@
 {
-  "name": "n-util",
-  "version": "0.0.1",
+  "name": "n-tools",
+  "version": "0.0.2",
   "description": "a util tool for dev",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ReAlign/n-util.git"
+    "url": "git+https://github.com/ReAlign/n-tools.git"
   },
   "author": "ReAlign",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ReAlign/n-util/issues"
+    "url": "https://github.com/ReAlign/n-tools/issues"
   },
-  "homepage": "https://github.com/ReAlign/n-util#readme"
+  "homepage": "https://github.com/ReAlign/n-tools#readme"
 }
