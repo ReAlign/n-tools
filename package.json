@@ -1,6 +1,6 @@
 {
   "name": "n-tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a util tool for dev",
   "main": "src/index.js",
   "scripts": {
