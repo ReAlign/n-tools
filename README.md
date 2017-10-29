@@ -38,4 +38,8 @@ for(var kk = 0; kk < 3; kk++) {
 	result = _.deepGet(obj, 'e.f[' + kk +'].g', '');
 	console.log(result);
 }
+
+// 'alj'
+// 'kakaka'
+// ''
 ```
