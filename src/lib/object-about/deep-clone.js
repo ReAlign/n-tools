@@ -1,4 +1,6 @@
-const _t = require('./../base/typeof');
+let _t = {};
+
+require('./lib/base/typeof')(_t);
 
 let x = {
     cloneObj: (obj) => {
