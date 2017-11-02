@@ -1,4 +1,4 @@
-import _t from './../base/typeof';
+const _t = require('./../base/typeof');
 
 let x = {
     cloneObj: (obj) => {
