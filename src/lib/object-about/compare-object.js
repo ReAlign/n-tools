@@ -1,4 +1,4 @@
-module.exports = (function (_) {
+module.exports = ((_) => {
     _.compareObject = (x, y) => {
         // If both x and y are null or undefined and exactly the same
         if (x === y) {

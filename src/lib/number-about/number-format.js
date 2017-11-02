@@ -1,4 +1,4 @@
-module.exports = (function (_) {
+module.exports = ((_) => {
     _.keepDecimal = (num = 0, prec = 2) => {
         num = parseFloat(num);
         if (isNaN(num) || isNaN(prec)) {
@@ -7,7 +7,7 @@ module.exports = (function (_) {
         }
         // toFixed() 保证精度
         return Math.round((num * Math.pow(10, prec)).toFixed(prec)) / Math.pow(10, prec);
-    },
+    };
 
     _.formatDigital = (val = 0) => {
         if (isNaN(val)) {
@@ -15,6 +15,6 @@ module.exports = (function (_) {
             return false;
         }
 
-        return val >= 10000 ? `${ct.keepDecimal(val / 10000)}万` : parseInt(val).toLocaleString();
-    }
+        return val >= 10000 ? `${_.keepDecimal(val / 10000)}万` : parseInt(val).toLocaleString();
+    };
 });
