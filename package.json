@@ -2,11 +2,16 @@
   "name": "n-tools",
   "version": "0.0.8",
   "description": "a util tool for dev",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
+    "develop": "gulp develop",
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "packageinstall": "npm install --registry=https://registry.npm.taobao.org",
     "lint": "eslint .",
-    "test": "jest && codecov"
+    "test": "jest && codecov",
+    "jests": "jest __test__/array-about/array-equals.test.js"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
@@ -29,7 +34,24 @@
     "url": "https://github.com/ReAlign/n-tools/issues"
   },
   "homepage": "https://github.com/ReAlign/n-tools#readme",
+  "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.12.0",
+    "del": "^2.2.2",
+    "exports-loader": "^0.6.4",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "webpack": "^2.2.1",
     "eslint": "^3.19.0",
     "eslint-config-kaola": "^0.1.3",
     "husky": "^0.13.4",
