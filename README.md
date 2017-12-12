@@ -9,8 +9,7 @@ a util tool for dev
 * extend
 * merge
 * arrayEquals
-
-require('./src/lib/number-about/number-format')(_);
+* keepDecimal
 
 require('./src/lib/get-about/deep-get')(_);
 
