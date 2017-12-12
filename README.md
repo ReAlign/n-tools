@@ -7,7 +7,7 @@ a util tool for dev
 * compareObject
 * deepClone
 * extend
-require('./src/lib/object-about/merge')(_);
+* merge
 
 require('./src/lib/array-about/array-equals')(_);
 
