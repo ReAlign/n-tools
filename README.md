@@ -11,8 +11,7 @@ a util tool for dev
 * arrayEquals
 * keepDecimal
 * formatDigital
-
-require('./src/lib/get-about/deep-get')(_);
+* deepGet
 
 ## Usage
 
