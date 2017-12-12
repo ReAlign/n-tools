@@ -5,8 +5,7 @@ a util tool for dev
 
 * typeof
 * compareObject
-
-require('./src/lib/object-about/deep-clone')(_);
+* deepClone
 require('./src/lib/object-about/extend')(_);
 require('./src/lib/object-about/merge')(_);
 
