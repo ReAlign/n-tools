@@ -4,8 +4,8 @@ a util tool for dev
 ## method list
 
 * typeof
+* compareObject
 
-require('./src/lib/object-about/compare-object')(_);
 require('./src/lib/object-about/deep-clone')(_);
 require('./src/lib/object-about/extend')(_);
 require('./src/lib/object-about/merge')(_);
