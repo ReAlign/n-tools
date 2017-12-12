@@ -10,6 +10,7 @@ a util tool for dev
 * merge
 * arrayEquals
 * keepDecimal
+* formatDigital
 
 require('./src/lib/get-about/deep-get')(_);
 
