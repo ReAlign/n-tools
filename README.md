@@ -1,7 +1,9 @@
 # n-tools
 a util tool for dev
 
-# Usage
+## method list
+
+## Usage
 
 ```
     let _ = require( 'n-tools' );
