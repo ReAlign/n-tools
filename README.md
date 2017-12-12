@@ -8,8 +8,7 @@ a util tool for dev
 * deepClone
 * extend
 * merge
-
-require('./src/lib/array-about/array-equals')(_);
+* arrayEquals
 
 require('./src/lib/number-about/number-format')(_);
 
