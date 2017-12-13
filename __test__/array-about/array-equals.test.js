@@ -3,6 +3,7 @@ const _tools = require('./../../index');
 const arr0 = [1, 2, 3, 4, 5];
 const arr00 = [1, 2, 3, 4, 6];
 const arr1 = [1, 2, 3, 4, 5];
+const arr11 = [1, 2, 3, 5, 4];
 const arr2 = ['1', 2, 3, 4, 5];
 const arr3 = [1, 2, 3];
 
@@ -10,8 +11,20 @@ test('arrayEqualsNormal', function() {
     expect(_tools.arrayEquals(arr0, arr1)).toBe(true);
 });
 
-test('arrayEqualsNormal1', function() {
+test('arrayEqualsNormal01', function() {
+    expect(_tools.arrayEquals(arr0, arr1)).toBe(true);
+});
+
+test('arrayEqualsNormal00', function() {
     expect(_tools.arrayEquals(arr0, arr00)).toBe(false);
+});
+
+test('arrayEqualsNormal11', function() {
+    expect(_tools.arrayEquals(arr0, arr11)).toBe(false);
+});
+
+test('arrayEqualsNormal11KeepOrderFalse', function() {
+    expect(_tools.arrayEquals(arr0, arr11, {keepOrder: false})).toBe(true);
 });
 
 test('arrayEqualsNormal2', function() {
