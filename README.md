@@ -1,7 +1,19 @@
 # n-tools
 a util tool for dev
 
-# Usage
+## method list
+
+* typeof
+* compareObject
+* deepClone
+* extend
+* merge
+* arrayEquals
+* keepDecimal
+* formatDigital
+* deepGet
+
+## Usage
 
 ```
     let _ = require( 'n-tools' );
