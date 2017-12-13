@@ -30,7 +30,7 @@ module.exports = ((_) => {
                 }
 
                 // Numbers, Strings, Functions, Booleans must be strictly equal
-                if (typeof (x[p]) !== 'object') {
+                if (_.typeOf(x[p]) !== 'object') {
                     return false;
                 }
 
