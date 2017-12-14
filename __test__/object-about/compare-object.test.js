@@ -43,3 +43,47 @@ test('compareObjectObject2', function() {
 test('compareObjectObject3', function() {
     expect(_tools.compareObject(o1, o4)).toBe(false);
 });
+
+let od1 = {
+    name: {
+        first: 'an',
+        second: 'liangjun'
+    },
+    age: {
+        real: 23,
+        order: 24
+    },
+    tags: ['boy', 'doubi', 'master'],
+    years: {
+        one: {
+            key: '1994',
+            name: 'birth'
+        }
+    }
+};
+
+let od2 = {
+    name: {
+        first: 'an',
+        second: 'liangjun'
+    },
+    age: {
+        real: 23,
+        order: 24
+    },
+    tags: ['boy', 'doubi', 'master'],
+    years: {
+        one: {
+            key: '1994',
+            name: 'birth'
+        },
+        two: {
+            key: '1995',
+            name: 'second birth'
+        }
+    }
+};
+
+test('compareObjectDeep1', function() {
+    expect(_tools.compareObject(od1, od2)).toBe(true);
+});
