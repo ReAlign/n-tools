@@ -30,12 +30,12 @@ module.exports = ((_) => {
                 }
 
                 // Numbers, Strings, Functions, Booleans must be strictly equal
-                if (_.typeOf(x[p]) !== 'object') {
+                if (!(_.typeOf(x[p]) == 'object' || _.typeOf(x[p]) == 'array')) {
                     return false;
                 }
 
                 // Objects and Arrays must be tested recursively
-                if (!Object.equals(x[p], y[p])) {
+                if (!_.compareObject(x[p], y[p])) {
                     return false;
                 }
             }

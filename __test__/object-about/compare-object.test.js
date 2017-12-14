@@ -62,6 +62,24 @@ let od1 = {
     }
 };
 
+let od1Copy = {
+    name: {
+        first: 'an',
+        second: 'liangjun'
+    },
+    age: {
+        real: 23,
+        order: 24
+    },
+    tags: ['boy', 'doubi', 'master'],
+    years: {
+        one: {
+            key: '1994',
+            name: 'birth'
+        }
+    }
+};
+
 let od2 = {
     name: {
         first: 'an',
@@ -85,5 +103,9 @@ let od2 = {
 };
 
 test('compareObjectDeep1', function() {
-    expect(_tools.compareObject(od1, od2)).toBe(true);
+    expect(_tools.compareObject(od1, od2)).toBe(false);
+});
+
+test('compareObjectDeep2', function() {
+    expect(_tools.compareObject(od1, od1Copy)).toBe(true);
 });
