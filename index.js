@@ -15,5 +15,7 @@ require('./src/lib/number-about/number-format')(_);
 
 require('./src/lib/get-about/deep-get')(_);
 
+require('./src/lib/render-about/debounce')(_);
+
 // Export it
 module.exports = _;
