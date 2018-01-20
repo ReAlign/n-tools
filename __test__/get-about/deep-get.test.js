@@ -20,6 +20,10 @@ var obj = {
     }
 };
 
+var cObj = {
+    g: 'alj'
+};
+
 test('deepGet1', function() {
     expect(_tools.deepGet(obj, 'e.f[0].g')).toEqual('alj');
 });
@@ -29,9 +33,13 @@ test('deepGet2', function() {
 });
 
 test('deepGet3', function() {
-    expect(_tools.deepGet(obj, 'e.f[2].g', '')).toEqual('');
+    expect(_tools.deepGet(obj, 'e.f[2].g', {defaVal: ''})).toEqual('');
 });
 
 test('deepGet4', function() {
     expect(_tools.deepGet(obj, 'e.f[3].g')).toEqual('');
+});
+
+test('deepGet5', function() {
+    expect(_tools.deepGet(obj, 'e.f[0]')).toEqual(cObj);
 });

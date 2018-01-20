@@ -1,23 +1,23 @@
-var defaultConfig = {
-    externals: {
+let defaultConfig = {
+  externals: {
+  },
+  entry: {
+    index: './index.js',
+  },
+  output: {
+    filename: './dist/n-tools.js',
+    library: 'nTools',
+    libraryTarget: 'umd',
+  },
+  module: {
+  },
+  plugins: [
+  ],
+  resolve: {
+    alias: {
+      'base': __dirname + '/src',
     },
-    entry: {
-      index: './main.js',
-    },
-    output: {
-      filename: './dist/localstorage.js',
-      library: 'LocalStorage',
-      libraryTarget: 'umd',
-    },
-    module: {
-    },
-    plugins: [
-    ],
-    resolve: {
-      alias: {
-        'base': __dirname + '/src',
-      },
-    },
-  };
+  },
+};
 
-  module.exports = defaultConfig;
+module.exports = defaultConfig;
