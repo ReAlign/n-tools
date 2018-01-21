@@ -1,17 +1,18 @@
 # n-tools
-a util tool for dev
+开发工具函数
 
-## method list
-
-* typeof
-* compareObject
-* deepClone
-* extend
-* merge
-* arrayEquals
-* keepDecimal
-* formatDigital
-* deepGet
+## methods
+| name | note | other |
+| --- | --- | --- |
+| typeof |  |  |
+| compareObject | 复杂类型数据比较 |  |
+| deepClone | 深拷贝 |  |
+| extend |  |  |
+| merge |  |  |
+| arrayEquals | 数组比较 |  |
+| keepDecimal |  |  |
+| formatDigital |  |  |
+| deepGet | 深获取 |  |
 
 ## Usage
 
