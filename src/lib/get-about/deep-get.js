@@ -1,11 +1,15 @@
 module.exports = ((_) => {
-    _.deepGet = (obj = {}, path = '', { defaVal, deepClone } = { defaVal: '', deepClone: true }) => {
+    _.deepGet = (obj = {}, path = '', opts = {}) => {
+        const {
+            defaVal = '',
+            deepClone = true
+        } = opts;
         let _res = (Array.isArray(path)
-                    ? path
-                    : path.replace(/\[/g, '.').replace(/'|"|\]/g, '').split('.'))
-                        .reduce((total, curVal) => (total || {})[curVal], obj);
+            ? path
+            : path.replace(/\[/g, '.').replace(/'|"|\]/g, '').split('.'))
+            .reduce((total, curVal) => (total || {})[curVal], obj);
 
-        const isUndefined = _.typrOf(_res) === 'undefined';
+        const isUndefined = _.typeOf(_res) === 'undefined';
 
         if(!isUndefined && deepClone) {
             _res = _.deepClone(_res);

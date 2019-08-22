@@ -33,11 +33,11 @@ test('deepGet2', function() {
 });
 
 test('deepGet3', function() {
-    expect(_tools.deepGet(obj, 'e.f[2].g', {defaVal: ''})).toEqual('');
+    expect(_tools.deepGet(obj, 'e.f[2].g', {defaVal: ''})).toEqual(undefined);
 });
 
 test('deepGet4', function() {
-    expect(_tools.deepGet(obj, 'e.f[3].g')).toEqual('');
+    expect(_tools.deepGet(obj, 'e.f[3].g')).toEqual(undefined);
 });
 
 test('deepGet5', function() {

@@ -139,17 +139,23 @@ module.exports = ((_) => {
 /***/ (function(module, exports) {
 
 module.exports = ((_) => {
-    _.deepGet = (obj = {}, path = '', { defaVal, deepClone } = { defaVal: '', deepClone: true }) => {
+    _.deepGet = (obj = {}, path = '', opts = {}) => {
+        const {
+            defaVal = '',
+            deepClone = true
+        } = opts;
         let _res = (Array.isArray(path)
-                    ? path
-                    : path.replace(/\[/g, '.').replace(/'|"|\]/g, '').split('.'))
-                        .reduce((total, curVal) => (total || {})[curVal], obj);
+            ? path
+            : path.replace(/\[/g, '.').replace(/'|"|\]/g, '').split('.'))
+            .reduce((total, curVal) => (total || {})[curVal], obj);
 
-        if(deepClone) {
+        const isUndefined = _.typeOf(_res) === 'undefined';
+
+        if(!isUndefined && deepClone) {
             _res = _.deepClone(_res);
         }
 
-        return _res || defaVal;
+        return isUndefined ? defaVal : _res;
     };
 });
 
