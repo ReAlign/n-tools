@@ -5,10 +5,12 @@ module.exports = ((_) => {
                     : path.replace(/\[/g, '.').replace(/'|"|\]/g, '').split('.'))
                         .reduce((total, curVal) => (total || {})[curVal], obj);
 
-        if(deepClone) {
+        const isUndefined = _.typrOf(_res) === 'undefined';
+
+        if(!isUndefined && deepClone) {
             _res = _.deepClone(_res);
         }
 
-        return _res || defaVal;
+        return isUndefined ? defaVal : _res;
     };
 });
